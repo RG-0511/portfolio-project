@@ -1,139 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Add Bootstrap for responsiveness -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Add Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RISHI GAUTAM - Portfolio</title>
+  
+  <!-- Bootstrap 5 & Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Your Name</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Home/Introduction Section -->
-    <section id="home" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
-                    <p class="lead">Brief overview about yourself and your expertise in Data and DevOps.</p>
-                </div>
-                <div class="col-lg-6">
-                    <!-- Add your professional image here -->
-                    <img src="images/profile.jpg" alt="Your Name" class="img-fluid rounded-circle">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Skills</h2>
-            <div class="row">
-                <!-- Data Skills -->
-                <div class="col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">Data Skills</h3>
-                            <ul class="skill-list">
-                                <li>Data Analysis</li>
-                                <li>Data Visualization</li>
-                                <li>SQL & Database Management</li>
-                                <li>Python for Data Science</li>
-                                <!-- Add more relevant skills -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- DevOps Skills -->
-                <div class="col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">DevOps Skills</h3>
-                            <ul class="skill-list">
-                                <li>Version Control (Git)</li>
-                                <li>CI/CD Pipelines</li>
-                                <li>Cloud Deployment</li>
-                                <li>Docker & Containerization</li>
-                                <!-- Add more relevant skills -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-5">Resume Overview</h2>
-            <p class="lead">Download my resume to learn more about my experience and qualifications.</p>
-            <a href="path/to/your-resume.pdf" class="btn btn-primary" download>Download Resume</a>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Contact Me</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <div class="contact-buttons">
-                        <a href="https://linkedin.com/in/yourusername" class="btn btn-outline-primary m-2">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        <a href="https://github.com/yourusername" class="btn btn-outline-dark m-2">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="mailto:your.email@example.com" class="btn btn-outline-danger m-2">
-                            <i class="far fa-envelope"></i> Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Chatbot Section -->
-    <div id="chatbot-container" class="chatbot-container">
-        <div class="chatbot-header">
-            <h3>Chat with me</h3>
-            <button id="chatbot-toggle" class="chatbot-toggle">
-                <i class="fas fa-comments"></i>
-            </button>
-        </div>
-        <div id="chatbot-body" class="chatbot-body">
-            <div id="chat-messages" class="chat-messages"></div>
-            <div class="chat-input-container">
-                <input type="text" id="chat-input" placeholder="Ask me about my skills, experience...">
-                <button id="chat-submit"><i class="fas fa-paper-plane"></i></button>
-            </div>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">RISHI GAUTAM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+  <!-- Home Section -->
+  <section id="home" class="bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-4">Hi, I'm <span class="">RISHI GAUTAM</span></h1>
+          <p class="lead"></p>I’m Rishi Gautam, a B.Tech Civil Engineering student at IIT Ropar, channeling my passion for Data Engineering and Machine Learning into impactful solutions. With a knack for problem-solving, I leverage tools like Python, Scikit-learn, and Pandas to develop practical ML models, as showcased in projects like Credit Card Fraud Detection and Spam SMS Classification.</p>
+          <p class="lead">
+          <p class="lead"></p>I recently integrated an AI-powered chatbot into this portfolio, built with open-source LLMs to interactively showcase my work—an exciting dive into conversational AI and prompt engineering. Alongside, I’m honing my DevOps skills, mastering Git and CI/CD pipelines, while prioritizing clean, efficient code and seamless collaboration.</p>
+          <p class="lead"></p>Beyond tech, my roles as Event Coordinator for AAROHAN and active participation in IIT Ropar’s Coding Club reflect my teamwork and adaptability. Let’s connect to explore data-driven innovations or AI possibilities!</p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="images/photo.jpg" alt="Profile" class="img-fluid rounded-circle profile-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Skills Section -->
+<section id="skills" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Technical Expertise</h2>
+      <div class="row g-4">
+        <!-- Data & ML -->
+        <div class="col-md-6">
+          <div class="card skill-card h-100">
+            <div class="card-body">
+              <h3 class="card-title"><i class="fas fa-chart-line me-2"></i>Data & ML</h3>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Python Programming</li>
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Machine Learning (Scikit-learn)</li>
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Pandas/NumPy (Data Analysis)</li>
+                <li><i class="fas fa-circle fa-xs text-primary"></i> SQL & Database Management</li>
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Power BI & Excel</li>
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Statistical Modeling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- DevOps & Tools -->
+<div class="col-md-6">
+    <div class="card skill-card h-100">
+      <div class="card-body">
+        <h3 class="card-title"><i class="fas fa-cogs me-2"></i>DevOps & Project Tools</h3>
+        <ul class="list-unstyled">
+          <!-- Focus on what you actually used in this assignment -->
+          <li><i class="fas fa-circle fa-xs text-primary"></i> Git & GitHub (Portfolio Version Control)</li>
+          <li><i class="fas fa-circle fa-xs text-primary"></i> Basic Web Deployment (Netlify/AWS for this Site)</li>
+          <li><i class="fas fa-circle fa-xs text-primary"></i> Structured Prompts (Chatbot Integration)</li>
+          <li><i class="fas fa-circle fa-xs text-primary"></i> Jupyter Notebooks (Project Prototyping)</li>
+        </ul>
+        <p class="text-muted small mt-3">*Developed through hands-on implementation for this portfolio project</p>
+      </div>
+    </div>
+  </div>
+  
+        <!-- Civil Engineering -->
+        <div class="col-md-6">
+          <div class="card skill-card h-100">
+            <div class="card-body">
+              <h3 class="card-title"><i class="fas fa-hard-hat me-2"></i>Civil Engineering</h3>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Reinforced Concrete Design</li>
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Structural Analysis</li>
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Soil Mechanics</li>
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Fluid Mechanics</li>
+                <li><i class="fas fa-circle fa-xs text-primary"></i> AutoCAD Drafting</li>
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Geomatics & Surveying</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Libraries -->
+        <div class="col-md-6">
+          <div class="card skill-card h-100">
+            <div class="card-body">
+              <h3 class="card-title"><i class="fas fa-toolbox me-2"></i>Libraries</h3>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Scikit-learn</li>
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Pandas/NumPy</li>
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Matplotlib/Plotly</li>
+                <li><i class="fas fa-circle fa-xs text-primary"></i> Excel Advanced Functions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Currently Learning -->
+        <div class="col-md-12 mt-4">
+          <div class="card skill-card h-100">
+            <div class="card-body">
+              <h3 class="card-title"><i class="fas fa-graduation-cap me-2"></i>Currently Learning</h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-circle fa-xs text-primary"></i> Time Series Analysis</li>
+                    <li><i class="fas fa-circle fa-xs text-primary"></i> CI/CD Pipeline Design</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-circle fa-xs text-primary"></i> Advanced Prompt Engineering</li>
+                    <li><i class="fas fa-circle fa-xs text-primary"></i> Web Deployment Strategies</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Resume Section -->
+<section id="resume" class="bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5">Professional Journey</h2>
+  
+     <!-- Education Section -->
+<div class="card resume-card mb-4">
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-center">
+        <h3 class="card-title">
+          <i class="fas fa-university me-2 text-primary"></i>
+          Indian Institute of Technology, Ropar
+        </h3>
+        <span class="badge bg-warning">2022 - 2026</span>
+      </div>
+      <ul class="list-unstyled">
+        <li><i class="fas fa-graduation-cap me-2 text-primary"></i>B.Tech in Civil Engineering (CGPA: 7.25/10)</li>
+        <li><i class="fas fa-book me-2 text-primary"></i>Relevant Coursework:
+          <div class="mt-2">
+            <!-- Changed from bg-primary to bg-secondary -->
+            <span class="badge bg-secondary">Reinforced Concrete Design</span>
+            <span class="badge bg-secondary">Structural Analysis</span>
+            <span class="badge bg-secondary">Fluid Mechanics</span>
+            <span class="badge bg-secondary">Soil Mechanics</span>
+            <span class="badge bg-secondary">Probability & Statistics</span>
+            <span class="badge bg-secondary">Linear Algebra</span>
+            <span class="badge bg-secondary">Data Structures</span>
+            <span class="badge bg-secondary">Machine Learning</span>
+          </div>
+        </li>
+        <li class="mt-2">
+          <i class="fas fa-users me-2 text-primary"></i>Leadership:
+          <span class="badge bg-secondary">Event Coordinator, AAROHAN</span>
+          <span class="badge bg-secondary">Coding Club Member</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+      <!-- Academic Projects -->
+      <div class="card resume-card mb-4">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="card-title">
+              <i class="fas fa-chart-bar me-2 text-primary"></i>
+              Academic Projects
+            </h3>
+          </div>
+  
+          <!-- Transport Modeling Project -->
+          <div class="project-item">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5>Data Collection & Analysis for Transport Modeling</h5>
+              <span class="badge bg-warning">Jan 2025 - Present</span>
+            </div>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-caret-right me-2 text-primary"></i>Collected pedestrian accessibility data for metro stations</li>
+              <li><i class="fas fa-caret-right me-2 text-primary"></i>Analyzing key attributes for walking infrastructure improvement</li>
+              <li><i class="fas fa-caret-right me-2 text-primary"></i>Tools: Python, Pandas, Statistical Analysis</li>
+            </ul>
+            <div class="tech-stack mt-2">
+              <span class="badge bg-secondary">Urban Planning</span>
+              <span class="badge bg-secondary">Data Analytics</span>
+              <span class="badge bg-secondary">Infrastructure Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Encryptix Internship -->
+      <div class="card resume-card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="card-title">
+              <i class="fas fa-laptop-code me-2 text-primary"></i>
+              Machine Learning Intern - Encryptix
+            </h3>
+            <span class="badge bg-warning">June 2024 - July 2024</span>
+          </div>
+  
+          <!-- Projects -->
+          <div class="project-item mt-3">
+            <h5><i class="fas fa-shield-alt me-2"></i>Credit Card Fraud Detection</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-caret-right me-2 text-primary"></i>Developed ensemble model using Logistic Regression, Decision Trees & Random Forests</li>
+              <li><i class="fas fa-caret-right me-2 text-primary"></i>Achieved 95% classification accuracy</li>
+              <li><a href="https://github.com/RG-0511/Encryptix" class="text-decoration-none">
+                <i class="fab fa-github me-2"></i>View Code
+              </a></li>
+            </ul>
+            <div class="tech-stack mt-2">
+              <span class="badge bg-secondary">Scikit-learn</span>
+              <span class="badge bg-secondary">Pandas</span>
+              <span class="badge bg-secondary">NumPy</span>
+            </div>
+          </div>
+  
+          <div class="project-item mt-4">
+            <h5><i class="fas fa-comment-slash me-2"></i>Spam SMS Detection</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-caret-right me-2 text-primary"></i>Implemented TF-IDF vectorization with SVM/Naive Bayes classifiers</li>
+              <li><i class="fas fa-caret-right me-2 text-primary"></i>Created automated text preprocessing pipeline</li>
+              <li><a href="https://github.com/RG-0511/Encryptix-3" class="text-decoration-none">
+                <i class="fab fa-github me-2"></i>View Code
+              </a></li>
+            </ul>
+            <div class="tech-stack mt-2">
+              <span class="badge bg-secondary">NLP</span>
+              <span class="badge bg-secondary">Text Processing</span>
+              <span class="badge bg-secondary">Matplotlib</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+     <!-- Resume Download Section -->
+<section id="resume-download" class="bg-light py-5">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h3 class="mb-4">Want the Full Picture?</h3>
+          <p class="lead mb-4">
+            Download my detailed resume to explore my complete academic background, 
+            technical skills, and project experiences in one document.
+          </p>
+          
+          <!-- Download Button with Size Options -->
+          <a href="resume/Resume_rishi.pdf" 
+             class="btn btn-primary btn-lg px-5 py-3"
+             download="Resume_rishi.pdf">
+            <i class="fas fa-file-download me-3"></i>
+            Download Resume (PDF)
+          </a>
+  
+          <!-- Optional Security Note -->
+          <div class="mt-4 text-muted small">
+            <i class="fas fa-lock me-2"></i>
+            Securely hosted on this domain | File size: 1.2MB
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light">
+    <div class="container text-center">
+      <h2 class="mb-5">Let's Connect</h2>
+      <div class="d-flex flex-wrap justify-content-center">
+        <a href="https://www.linkedin.com/in/rishi-gautam-37573b255" class="btn btn-outline-primary contact-btn">
+          <i class="fab fa-linkedin me-2"></i>LinkedIn
+        </a>
+        <a href="https://github.com/RG-0511" class="btn btn-outline-dark contact-btn">
+          <i class="fab fa-github me-2"></i>GitHub
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=2022ceb1028@iitrpr.ac.in" target="_blank" class="btn btn-outline-danger contact-btn">
+            <i class="fas fa-envelope me-2"></i>Email
+          </a>
+          
+      </div>
+    </div>
+  </section>
+
+  <!-- Chatbot Container -->
+  <div class="chatbot-container">
+    <div class="chatbot-header">
+      <h3><i class="fas fa-robot me-2"></i>Portfolio Assistant</h3>
+      <button id="chatbot-toggle" class="btn btn-primary">
+        <i class="fas fa-comment"></i>
+      </button>
+    </div>
+    <div class="chatbot-body" id="chatbot-body">
+      <div class="chat-messages" id="chat-messages"></div>
+      <div class="chat-input p-3">
+        <input type="text" id="chat-input" class="form-control" placeholder="Ask me about my skills..." />
+        <button id="chat-submit" class="btn btn-success mt-2">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Your Custom JavaScript -->
+  <script src="js/script.js"></script>
 </body>
 </html>
