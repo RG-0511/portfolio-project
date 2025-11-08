@@ -8,13 +8,18 @@
   <!-- Bootstrap 5 & Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
+  
+  <!-- Google Fonts for a Modern Look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
   <!-- Your Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">RISHI GAUTAM</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -25,6 +30,7 @@
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -32,111 +38,91 @@
   </nav>
 
   <!-- Home Section -->
-<section id="home" class="bg-white">
+  <section id="home" class="home-section">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-1 order-2">
-                <h1 class="display-4">Hi, I'm <span class="">RISHI GAUTAM</span></h1>
-                <p class="lead">I’m Rishi Gautam, a B.Tech Civil Engineering student at IIT Ropar, channeling my passion for Data Engineering and Machine Learning into impactful solutions. With a knack for problem-solving, I leverage tools like Python, Scikit-learn, and Pandas to develop practical ML models, as showcased in projects like Credit Card Fraud Detection and Spam SMS Classification.</p>
-                <p class="lead">I recently integrated an AI-powered chatbot into this portfolio, built with open-source LLMs to interactively showcase my work—an exciting dive into conversational AI and prompt engineering. Alongside, I’m honing my DevOps skills, mastering Git and CI/CD pipelines, while prioritizing clean, efficient code and seamless collaboration.</p>
-                <p class="lead">Beyond tech, my roles as Event Coordinator for AAROHAN and active participation in IIT Ropar’s Coding Club reflect my teamwork and adaptability. Let’s connect to explore data-driven innovations or AI possibilities!</p>
+            <div class="col-lg-7 order-lg-1 order-2">
+                <h1 class="display-3 fw-bold">Hi, I'm <span class="text-accent">RISHI GAUTAM</span></h1>
+                <p class="lead my-4">A B.Tech Civil Engineering student at IIT Ropar, channeling a passion for Data Engineering and Machine Learning into impactful, data-driven solutions.</p>
+                <a href="#resume" class="btn btn-custom">View My Work</a>
+                <a href="resume/Rishi_CV.pdf" class="btn btn-outline-custom ms-2" download>Download Resume</a>
             </div>
-            <div class="col-lg-6 text-center order-lg-2 order-1">
-                <img src="images/photo.jpg" alt="Profile" class="img-fluid rounded-circle profile-img" />
+            <div class="col-lg-5 text-center order-lg-2 order-1 mb-5 mb-lg-0">
+                <img src="images\Rishi_photo.jpg" alt="Profile" class="img-fluid rounded-circle profile-img shadow-lg" />
             </div>
         </div>
     </div>
-</section>
-<!-- Skills Section -->
-<section id="skills" class="bg-light">
+  </section>
+
+  <!-- Skills Section (Restored Detailed Layout) -->
+  <section id="skills" class="bg-dark-section">
     <div class="container">
-      <h2 class="text-center mb-5">Technical Expertise</h2>
+      <h2 class="section-title text-center">Technical Expertise</h2>
       <div class="row g-4">
-        <!-- Data & ML -->
-        <div class="col-md-6">
-          <div class="card skill-card h-100">
+        <!-- Programming Languages -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
             <div class="card-body">
-              <h3 class="card-title"><i class="fas fa-chart-line me-2"></i>Data & ML</h3>
-              <ul class="list-unstyled">
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Python Programming</li>
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Machine Learning (Scikit-learn)</li>
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Pandas/NumPy (Data Analysis)</li>
-                <li><i class="fas fa-circle fa-xs text-primary"></i> SQL & Database Management</li>
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Power BI & Excel</li>
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Statistical Modeling</li>
+              <h5 class="card-title"><i class="fas fa-code me-2"></i>Programming Languages</h5>
+              <ul class="list-unstyled text-secondary small mt-3">
+                <li><i class="fas fa-check-circle text-accent me-2"></i>Python</li>
+                <li><i class="fas fa-check-circle text-accent me-2"></i>JavaScript</li>
+                <li><i class="fas fa-check-circle text-accent me-2"></i>SQL</li>
+                <li><i class="fas fa-check-circle text-accent me-2"></i>C</li>
               </ul>
             </div>
           </div>
         </div>
-  
-        <!-- DevOps & Tools -->
-<div class="col-md-6">
-    <div class="card skill-card h-100">
-      <div class="card-body">
-        <h3 class="card-title"><i class="fas fa-cogs me-2"></i>DevOps & Project Tools</h3>
-        <ul class="list-unstyled">
-          <!-- Focus on what you actually used in this assignment -->
-          <li><i class="fas fa-circle fa-xs text-primary"></i> Git & GitHub (Portfolio Version Control)</li>
-          <li><i class="fas fa-circle fa-xs text-primary"></i> Basic Web Deployment (Netlify/AWS for this Site)</li>
-          <li><i class="fas fa-circle fa-xs text-primary"></i> Structured Prompts (Chatbot Integration)</li>
-          <li><i class="fas fa-circle fa-xs text-primary"></i> Jupyter Notebooks (Project Prototyping)</li>
-        </ul>
-        <p class="text-muted small mt-3">*Developed through hands-on implementation for this portfolio project</p>
-      </div>
-    </div>
-  </div>
-  
-        <!-- Civil Engineering -->
-        <div class="col-md-6">
-          <div class="card skill-card h-100">
+        <!-- AI & Data Science -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
             <div class="card-body">
-              <h3 class="card-title"><i class="fas fa-hard-hat me-2"></i>Civil Engineering</h3>
-              <ul class="list-unstyled">
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Reinforced Concrete Design</li>
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Structural Analysis</li>
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Soil Mechanics</li>
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Fluid Mechanics</li>
-                <li><i class="fas fa-circle fa-xs text-primary"></i> AutoCAD Drafting</li>
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Geomatics & Surveying</li>
+              <h5 class="card-title"><i class="fas fa-brain me-2"></i>AI & Data Science</h5>
+              <ul class="list-unstyled text-secondary small mt-3">
+                <li><i class="fas fa-check-circle text-accent me-2"></i>Machine Learning</li>
+                <li><i class="fas fa-check-circle text-accent me-2"></i>Predictive Modelling & NLP</li>
+                <li><i class="fas fa-check-circle text-accent me-2"></i>Scikit-learn, NumPy, Pandas</li>
+                <li><i class="fas fa-check-circle text-accent me-2"></i>Matplotlib, Seaborn</li>
               </ul>
             </div>
           </div>
         </div>
-  
-        <!-- Libraries -->
-        <div class="col-md-6">
-          <div class="card skill-card h-100">
+        <!-- Web Dev & Databases -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
             <div class="card-body">
-              <h3 class="card-title"><i class="fas fa-toolbox me-2"></i>Libraries</h3>
-              <ul class="list-unstyled">
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Scikit-learn</li>
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Pandas/NumPy</li>
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Matplotlib/Plotly</li>
-                <li><i class="fas fa-circle fa-xs text-primary"></i> Excel Advanced Functions</li>
+              <h5 class="card-title"><i class="fas fa-server me-2"></i>Web Dev & Databases</h5>
+              <ul class="list-unstyled text-secondary small mt-3">
+                <li><i class="fas fa-check-circle text-accent me-2"></i>Node.js, Express.js</li>
+                <li><i class="fas fa-check-circle text-accent me-2"></i>PostgreSQL, REST APIs</li>
+                <li><i class="fas fa-check-circle text-accent me-2"></i>HTML, CSS</li>
               </ul>
             </div>
           </div>
         </div>
-  
-        <!-- Currently Learning -->
-        <div class="col-md-12 mt-4">
-          <div class="card skill-card h-100">
+        <!-- Tools & Platforms -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
             <div class="card-body">
-              <h3 class="card-title"><i class="fas fa-graduation-cap me-2"></i>Currently Learning</h3>
-              <div class="row">
-                <div class="col-md-6">
-                  <ul class="list-unstyled">
-                    <li><i class="fas fa-circle fa-xs text-primary"></i> Time Series Analysis</li>
-                    <li><i class="fas fa-circle fa-xs text-primary"></i> CI/CD Pipeline Design</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <ul class="list-unstyled">
-                    <li><i class="fas fa-circle fa-xs text-primary"></i> Advanced Prompt Engineering</li>
-                    <li><i class="fas fa-circle fa-xs text-primary"></i> Web Deployment Strategies</li>
-                  </ul>
-                </div>
-              </div>
+              <h5 class="card-title"><i class="fas fa-tools me-2"></i>Tools & Platforms</h5>
+              <ul class="list-unstyled text-secondary small mt-3">
+                <li><i class="fas fa-check-circle text-accent me-2"></i>Git, GitHub</li>
+                <li><i class="fas fa-check-circle text-accent me-2"></i>Render, Netlify</li>
+                <li><i class="fas fa-check-circle text-accent me-2"></i>Excel, Power BI</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+         <!-- Civil Engineering Core -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-hard-hat me-2"></i>Civil Engineering</h5>
+              <ul class="list-unstyled text-secondary small mt-3">
+                 <li><i class="fas fa-check-circle text-accent me-2"></i>Transportation Engineering</li>
+                 <li><i class="fas fa-check-circle text-accent me-2"></i>Structural & Foundation Engineering</li>
+                 <li><i class="fas fa-check-circle text-accent me-2"></i>AutoCAD & Civil Software</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -144,196 +130,268 @@
     </div>
   </section>
 
-
-<!-- Resume Section -->
-<section id="resume" class="bg-white">
+  <!-- Resume Section (Professional Journey - Restored Original Layout) -->
+  <section id="resume" class="bg-dark-section">
     <div class="container">
-      <h2 class="text-center mb-5">Professional Journey</h2>
-  
-     <!-- Education Section -->
-<div class="card resume-card mb-4">
-    <div class="card-body">
-      <div class="d-flex justify-content-between align-items-center">
-        <h3 class="card-title">
-          <i class="fas fa-university me-2 text-primary"></i>
-          Indian Institute of Technology, Ropar
-        </h3>
-        <span class="badge bg-warning">2022 - 2026</span>
-      </div>
-      <ul class="list-unstyled">
-        <li><i class="fas fa-graduation-cap me-2 text-primary"></i>B.Tech in Civil Engineering (CGPA: 7.25/10)</li>
-        <li><i class="fas fa-book me-2 text-primary"></i>Relevant Coursework:
-          <div class="mt-2">
-            <!-- Changed from bg-primary to bg-secondary -->
-            <span class="badge bg-secondary">Reinforced Concrete Design</span>
-            <span class="badge bg-secondary">Structural Analysis</span>
-            <span class="badge bg-secondary">Fluid Mechanics</span>
-            <span class="badge bg-secondary">Soil Mechanics</span>
-            <span class="badge bg-secondary">Probability & Statistics</span>
-            <span class="badge bg-secondary">Linear Algebra</span>
-            <span class="badge bg-secondary">Data Structures</span>
-            <span class="badge bg-secondary">Machine Learning</span>
-          </div>
-        </li>
-        <li class="mt-2">
-          <i class="fas fa-users me-2 text-primary"></i>Leadership:
-          <span class="badge bg-secondary">Event Coordinator, AAROHAN</span>
-          <span class="badge bg-secondary">Coding Club Member</span>
-        </li>
-      </ul>
-    </div>
-  </div>
-  
-      <!-- Academic Projects -->
+      <h2 class="section-title text-center">Professional Journey</h2>
+      <!-- Education Card (Original Unchanged Layout) -->
       <div class="card resume-card mb-4">
-        <div class="card-body">
-          <div class="d-flex justify-content-between align-items-center">
-            <h3 class="card-title">
-              <i class="fas fa-chart-bar me-2 text-primary"></i>
-              Academic Projects
-            </h3>
+        <div class="card-body p-4">
+          <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <h4 class="card-title"><i class="fas fa-university me-2 text-accent"></i> Indian Institute of Technology, Ropar</h4>
+            <span class="badge bg-warning text-dark">2022 - 2026</span>
           </div>
-  
-          <!-- Transport Modeling Project -->
-          <div class="project-item">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5>Data Collection & Analysis for Transport Modeling</h5>
-              <span class="badge bg-warning">Jan 2025 - Present</span>
-            </div>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-caret-right me-2 text-primary"></i>Collected pedestrian accessibility data for metro stations</li>
-              <li><i class="fas fa-caret-right me-2 text-primary"></i>Analyzing key attributes for walking infrastructure improvement</li>
-              <li><i class="fas fa-caret-right me-2 text-primary"></i>Tools: Python, Pandas, Statistical Analysis</li>
-            </ul>
-            <div class="tech-stack mt-2">
-              <span class="badge bg-secondary">Urban Planning</span>
-              <span class="badge bg-secondary">Data Analytics</span>
-              <span class="badge bg-secondary">Infrastructure Design</span>
-            </div>
+          <ul class="list-unstyled mt-3 text-secondary">
+            <li><i class="fas fa-graduation-cap me-2 text-accent"></i>B.Tech in Civil Engineering (CGPA: 7.49/10)</li>
+            <li class="mt-2"><i class="fas fa-book me-2 text-accent"></i>Relevant Coursework:
+              <div class="d-flex flex-wrap mt-2">
+                <span class="badge bg-secondary m-1"></span>
+                <span class="badge bg-secondary m-1">Probability And Statistics</span>
+                <span class="badge bg-secondary m-1">Linear Algebra</span>
+                <span class="badge bg-secondary m-1">Differential Equations</span>
+                <span class="badge bg-secondary m-1">Calculus</span>
+                <span class="badge bg-secondary m-1">Earthquake Resistant Design</span>
+                <span class="badge bg-secondary m-1">Trabsportation Engineering</span>
+                <span class="badge bg-secondary m-1">Foundation Engineering</span>
+                <span class="badge bg-secondary m-1">Steel Structures</span>
+                <span class="badge bg-secondary m-1">Reinforced Concrete Design</span>
+                <span class="badge bg-secondary m-1">Structural Analysis</span>
+                <span class="badge bg-secondary m-1">Fluid Mechanics</span>
+                <span class="badge bg-secondary m-1">Soil Mechanics</span>
+                <span class="badge bg-secondary m-1">Probability & Statistics</span>
+                <span class="badge bg-secondary m-1">Linear Algebra</span>
+                <span class="badge bg-secondary m-1">Data Structures</span>
+                <span class="badge bg-secondary m-1">Machine Learning</span>
+              </div>
+            </li>
+            <li class="mt-2"><i class="fas fa-users me-2 text-accent"></i>Leadership:
+                <div class="d-flex flex-wrap mt-2">
+                    <span class="badge bg-secondary m-1">Event Coordinator, AAROHAN</span>
+                    <span class="badge bg-secondary m-1">Coding Club Member</span>
+                </div>
+            </li>
+             <li class="mt-2"><i class="fas fa-cogs me-2 text-accent"></i>Technical Focus:
+                <div class="d-flex flex-wrap mt-2">
+                    <span class="badge bg-secondary m-1">Data Structures & Algorithms</span>
+                    <span class="badge bg-secondary m-1">Machine Learning Fundamentals</span>
+                    <span class="badge bg-secondary m-1">Statistical Analysis</span>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Experience Cards (New Content in Original Layout) -->
+      <div class="card resume-card mb-4">
+        <div class="card-body p-4">
+          <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <h4 class="card-title"><i class="fas fa-car-crash me-2 text-accent"></i> Infrastructure Intern - Crashfree India (CARS24)</h4>
+            <span class="badge bg-warning text-dark">July 2025 - Present</span>
+          </div>
+          <p class="text-secondary small mt-3">Leveraged data collection techniques, including field visits and RTI filings, to identify and map accident-prone blackspots. Applied survey design and stakeholder engagement skills to gather qualitative data for Road Safety Audits.</p>
+          <div class="d-flex flex-wrap mt-2">
+              <span class="badge bg-secondary m-1">Data Collection</span>
+              <span class="badge bg-secondary m-1">Survey Design</span>
+              <span class="badge bg-secondary m-1">Road Safety Audits</span>
           </div>
         </div>
       </div>
-  
-      <!-- Encryptix Internship -->
+
+      <div class="card resume-card mb-4">
+        <div class="card-body p-4">
+          <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <h4 class="card-title"><i class="fas fa-cogs me-2 text-accent"></i> Data Solutions Developer - Connectify</h4>
+            <span class="badge bg-warning text-dark">May 2025 - Present</span>
+          </div>
+           <p class="text-secondary small mt-3">Engineered a custom, full-stack Caller CRM and developed a suite of web automation tools to collect client and market data, with future work involving predictive modeling.</p>
+            <div class="d-flex flex-wrap mt-2">
+                <span class="badge bg-secondary m-1">Node.js</span>
+                <span class="badge bg-secondary m-1">HTML/CSS</span>
+                <span class="badge bg-secondary m-1">Python</span>
+                <span class="badge bg-secondary m-1">Selenium</span>
+                <span class="badge bg-secondary m-1">Full-Stack Development</span>
+            </div>
+        </div>
+      </div>
+
       <div class="card resume-card">
-        <div class="card-body">
-          <div class="d-flex justify-content-between align-items-center">
-            <h3 class="card-title">
-              <i class="fas fa-laptop-code me-2 text-primary"></i>
-              Machine Learning Intern - Encryptix
-            </h3>
-            <span class="badge bg-warning">June 2024 - July 2024</span>
+        <div class="card-body p-4">
+          <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <h4 class="card-title"><i class="fas fa-laptop-code me-2 text-accent"></i> Machine Learning Intern - Encryptix</h4>
+            <span class="badge bg-warning text-dark">June 2024 - July 2024</span>
           </div>
+           <p class="text-secondary small mt-3">Developed ML models for key business problems, including a customer churn predictor and an NLP-based spam SMS detector.</p>
+           <div class="d-flex flex-wrap mt-2">
+               <span class="badge bg-secondary m-1">Machine Learning</span>
+               <span class="badge bg-secondary m-1">Predictive Modeling</span>
+               <span class="badge bg-secondary m-1">NLP</span>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
   
-          <!-- Projects -->
-          <div class="project-item mt-3">
-            <h5><i class="fas fa-shield-alt me-2"></i>Credit Card Fraud Detection</h5>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-caret-right me-2 text-primary"></i>Developed ensemble model using Logistic Regression, Decision Trees & Random Forests</li>
-              <li><i class="fas fa-caret-right me-2 text-primary"></i>Achieved 95% classification accuracy</li>
-              <li><a href="https://github.com/RG-0511/Encryptix" class="text-decoration-none">
-                <i class="fab fa-github me-2"></i>View Code
-              </a></li>
-            </ul>
-            <div class="tech-stack mt-2">
-              <span class="badge bg-secondary">Scikit-learn</span>
-              <span class="badge bg-secondary">Pandas</span>
-              <span class="badge bg-secondary">NumPy</span>
+  <!-- Projects Section -->
+  <section id="projects" class="bg-dark-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Highlighted Projects</h2>
+      <div class="row g-4 justify-content-center">
+  
+        <!-- Project Card 1: Call Management System -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 project-card shadow-sm" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#projectModal1">
+            <img src="https://placehold.co/600x400/181818/f39c12?text=CRM" class="card-img-top" alt="Call Management System">
+            <div class="card-body">
+              <h5 class="card-title text-accent">Call Management System</h5>
+              <p class="card-text text-light small">A full-stack CRM with a Node.js backend to automate call distribution workflows.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project Card 2: EV Adoption Data Modelling -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 project-card shadow-sm" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#projectModal2">
+            <img src="https://placehold.co/600x400/181818/f39c12?text=EV+Analysis" class="card-img-top" alt="EV Adoption Data Modelling">
+            <div class="card-body">
+              <h5 class="card-title text-accent">EV Adoption Data Modelling</h5>
+              <p class="card-text text-light small">A predictive model to forecast Electric Vehicle adoption trends by analyzing consumer data.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3: Portfolio Website -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 project-card shadow-sm" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#projectModal3">
+              <img src="https://placehold.co/600x400/181818/f39c12?text=AI+Portfolio" class="card-img-top" alt="AI Portfolio">
+              <div class="card-body">
+                <h5 class="card-title text-accent">AI-Powered Portfolio</h5>
+                <p class="card-text text-light small">This responsive personal website, featuring an integrated AI chatbot powered by Llama 3.</p>
+              </div>
             </div>
           </div>
   
-          <div class="project-item mt-4">
-            <h5><i class="fas fa-comment-slash me-2"></i>Spam SMS Detection</h5>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-caret-right me-2 text-primary"></i>Implemented TF-IDF vectorization with SVM/Naive Bayes classifiers</li>
-              <li><i class="fas fa-caret-right me-2 text-primary"></i>Created automated text preprocessing pipeline</li>
-              <li><a href="https://github.com/RG-0511/Encryptix-3" class="text-decoration-none">
-                <i class="fab fa-github me-2"></i>View Code
-              </a></li>
+      </div>
+    </div>
+  
+    <!-- Modal for Project 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-custom modal-dialog-centered">
+        <div class="modal-content bg-secondary text-light">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="projectModalLabel1">Call Management System</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body overflow-scroll">
+            <img src="https://placehold.co/1200x800/181818/f39c12?text=Full+Stack+CRM" alt="Call Management System" class="img-fluid rounded mb-3" />
+            <p>Developed a full-stack CRM with a Node.js backend and vanilla JS frontend to automate call distribution workflows. Managed the end-to-end deployment of the PostgreSQL database on Render and the static frontend on Netlify.</p>
+            <ul>
+              <li><strong>Technologies:</strong> Node.js, PostgreSQL, JavaScript, HTML/CSS</li>
+              <li><a href="https://github.com/RG-0511/Connectify" target="_blank" class="text-accent">View Source Code on GitHub</a></li>
             </ul>
-            <div class="tech-stack mt-2">
-              <span class="badge bg-secondary">NLP</span>
-              <span class="badge bg-secondary">Text Processing</span>
-              <span class="badge bg-secondary">Matplotlib</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal for Project 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-custom modal-dialog-centered">
+        <div class="modal-content bg-secondary text-light">
+          <div class="modal-header border-0">
+            <h5 class="modal-title" id="projectModalLabel2">EV Adoption Data Modelling</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body overflow-scroll">
+            <img src="https://placehold.co/1200x800/181818/f39c12?text=Predictive+Modelling" alt="EV Adoption Data Modelling" class="img-fluid rounded mb-3" />
+            <p>A project under Dr. Rahul T.M at IIT Ropar. Developing a predictive model to forecast Electric Vehicle adoption trends by analyzing consumer and market data. Applying statistical methods in Python to evaluate the impact of key variables like cost and infrastructure.</p>
+            <ul>
+              <li><strong>Technologies:</strong> Python, Statistical Modelling, Data Analysis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Project 3 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-custom modal-dialog-centered">
+          <div class="modal-content bg-secondary text-light">
+            <div class="modal-header border-0">
+              <h5 class="modal-title" id="projectModalLabel3">AI-Powered Portfolio Website</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body overflow-scroll">
+              <img src="https://placehold.co/1200x800/181818/f39c12?text=Portfolio+Showcase" alt="AI Portfolio" class="img-fluid rounded mb-3" />
+              <p>Designed and built a fully responsive personal website using HTML, modern CSS, and Bootstrap to create an appealing UI. Engineered an AI chatbot via the Llama 3 API to provide visitors with interactive, context-aware answers about my work.</p>
+              <ul>
+                <li><strong>Technologies:</strong> HTML, CSS, Bootstrap, JavaScript, Llama 3 API</li>
+                <li><a href="https://github.com/RG-0511/portfolio-project.git" target="_blank" class="text-accent">View Source Code on GitHub</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
   
-     <!-- Resume Download Section -->
-<section id="resume-download" class="bg-light py-5">
+  </section>
+
+  <section id="resume-download">
     <div class="container text-center">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <h3 class="mb-4">Want the Full Picture?</h3>
-          <p class="lead mb-4">
-            Download my detailed resume to explore my complete academic background, 
-            technical skills, and project experiences in one document.
-          </p>
-          
-          <!-- Download Button with Size Options -->
-          <a href="resume/Resume_rishi.pdf" 
-             class="btn btn-primary btn-lg px-5 py-3"
-             download="Resume_rishi.pdf">
-            <i class="fas fa-file-download me-3"></i>
-            Download Resume (PDF)
-          </a>
-  
-          <!-- Optional Security Note -->
-          <div class="mt-4 text-muted small">
-            <i class="fas fa-lock me-2"></i>
-            Securely hosted on this domain | File size: 1.2MB
-          </div>
-        </div>
-      </div>
+      <h2 class="section-title">Want the Full Picture?</h2>
+      <p class="lead text-secondary mb-4">Download my detailed resume for a complete overview.</p>
+      <a href="resume/Rishi_CV.pdf" class="btn btn-custom btn-lg" download><i class="fas fa-file-download me-2"></i>Download Resume</a>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="bg-light">
+  <section id="contact" class="bg-dark-section">
     <div class="container text-center">
-      <h2 class="mb-5">Let's Connect</h2>
-      <div class="d-flex flex-wrap justify-content-center">
-        <a href="https://www.linkedin.com/in/rishi-gautam-37573b255" class="btn btn-outline-primary contact-btn">
-          <i class="fab fa-linkedin me-2"></i>LinkedIn
-        </a>
-        <a href="https://github.com/RG-0511" class="btn btn-outline-dark contact-btn">
-          <i class="fab fa-github me-2"></i>GitHub
-        </a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=2022ceb1028@iitrpr.ac.in" target="_blank" class="btn btn-outline-danger contact-btn">
-            <i class="fas fa-envelope me-2"></i>Email
-          </a>
-        </a>
-        <a href="https://github.com/RG-0511/portfolio-project.git" class="btn btn-outline-primary contact-btn" target="_blank">
-            <i class="fab fa-github me-1"></i>Portfolio Code
-        </a>
-          
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="https://www.linkedin.com/in/rishi-gautam-37573b255" class="btn btn-outline-custom contact-btn"><i class="fab fa-linkedin me-2"></i>LinkedIn</a>
+        <a href="https://github.com/RG-0511" class="btn btn-outline-custom contact-btn"><i class="fab fa-github me-2"></i>GitHub</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=2022ceb1028@iitrpr.ac.in" target="_blank" class="btn btn-outline-custom contact-btn"><i class="fas fa-envelope me-2"></i>Email</a>
       </div>
     </div>
   </section>
 
   <!-- Chatbot Container -->
   <div class="chatbot-container">
-    <div class="chatbot-header">
+    <div class="chatbot-header" id="chatbot-toggle">
       <h3><i class="fas fa-robot me-2"></i>Portfolio Assistant</h3>
-      <button id="chatbot-toggle" class="btn btn-primary">
-        <i class="fas fa-comment"></i>
-      </button>
     </div>
     <div class="chatbot-body" id="chatbot-body">
       <div class="chat-messages" id="chat-messages"></div>
-      <div class="chat-input p-3">
-        <input type="text" id="chat-input" class="form-control" placeholder="Ask me about my skills..." />
-        <button id="chat-submit" class="btn btn-success mt-2">
-          <i class="fas fa-paper-plane"></i>
-        </button>
+      <div class="chat-input">
+        <input type="text" id="chat-input" class="form-control" placeholder="Ask me anything..." />
+        <button id="chat-submit" class="btn"><i class="fas fa-paper-plane"></i></button>
       </div>
     </div>
   </div>
 
-  <!-- Bootstrap Bundle (includes Popper) -->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Rishi Gautam. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+   <!-- Modal for Chatbot Responses -->
+  <div class="modal fade" id="chatbotResponseModal" tabindex="-1" aria-labelledby="chatbotResponseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-custom modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="chatbotResponseModalLabel">Chatbot Response</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Full response will be injected here by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Your Custom JavaScript -->
   <script src="js/script.js"></script>
 </body>
 </html>
+
